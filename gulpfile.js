@@ -15,7 +15,6 @@ var gulp        = require('gulp'),
     sprite      = require('gulp.spritesmith'),
     rimraf      = require('rimraf'),
     browserSync = require("browser-sync"),
-    neat        = require('node-neat').includePaths,
     reload      = browserSync.reload;
 
 var path = {

@@ -1,25 +1,30 @@
 @font-face {
-    font-family: "RalewayRegular";
-    src: url("../fonts/RalewayRegular/RalewayRegular.eot");
-    src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix") format("embedded-opentype"),
-             url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"),
-             url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "RalewayBold";
-    src: url("../fonts/RalewayBold/RalewayBold.eot");
-    src: url("../fonts/RalewayBold/RalewayBold.eot?#iefix") format("embedded-opentype"),
-             url("../fonts/RalewayBold/RalewayBold.woff") format("woff"),
-             url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
-
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url("../fonts/Roboto-Italic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 
 // h1{

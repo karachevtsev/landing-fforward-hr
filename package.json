@@ -17,6 +17,6 @@
     "gulp-uglify": "^1.5.3",
     "gulp-watch": "^4.3.5",
     "imagemin-pngquant": "^5.0.0",
-    "node-bourbon": "^4.2.8",
+    "node-bourbon": "^4.2.8"
   }
 }

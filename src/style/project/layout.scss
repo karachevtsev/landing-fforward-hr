@@ -1,0 +1,40 @@
+body {
+    min-width: 320px;
+
+    font-family: $font-regular;
+    font-size:  $base-font-size;
+    line-height: $base-line-height;
+    color: #333;
+}
+
+.before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.ul_style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon {
+    display: inline-block;
+}

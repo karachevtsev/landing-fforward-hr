@@ -30,49 +30,13 @@
     font-weight: normal;
 }
 
+// convert font-size pix to em function
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
 
-// h1{
-
-// }
-
-// h2{
-
-// }
-
-// h3{
-
-// }
-
-// h4{
-
-// }
-
-// p,
-// li,
-// span{
-
-// }
-
-// strong,
-// b{
-//   font-weight: 600;
-// }
-
-// a{
-
-//   &:hover{
-
-//   }
-// }
-
-// ul{
-//     li{
-
-//     }
-// }
-
-// table{
-//   td{
-
-//   }
-// }
+a,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}

@@ -23,6 +23,7 @@ var path = {
         js:    'build/js/',
         libs:  'build/js/',
         css:   'build/css/',
+        csslibs: 'build/css/',
         img:   'build/img/',
         fonts: 'build/fonts/'
     },
@@ -30,6 +31,7 @@ var path = {
         html:  'src/*.html',
         js:    'src/js/*.js',
         libs:  'src/libs/*.js',
+        csslibs: 'src/libs/*.css',
         style: 'src/style/main.scss',
         img:   'src/images/*.*',
         fonts: 'src/fonts/**/*.*'
@@ -38,6 +40,7 @@ var path = {
         html:  'src/**/*.html',
         js:    'src/js/**/*.js',
         libs:  'src/libs/*.js',
+        csslibs: 'src/libs/*.css',
         style: 'src/style/**/**/*.scss',
         img:   'src/images/**/*.*',
         fonts: 'src/fonts/**/*.*'
@@ -49,7 +52,7 @@ var config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: true,
+    // tunnel: true,
     host: 'localhost',
     port: 9000,
     logPrefix: 'front-end-karachevtsev'
@@ -95,6 +98,13 @@ gulp.task('style:build', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('csslibs:build', function () {
+    gulp.src('src/libs/*.css')
+        .pipe(plumber())
+        .pipe(gulp.dest(path.build.css))
+        .pipe(reload({stream: true}));
+});
+
 gulp.task('image:build', function () {
     gulp.src(path.src.img)
         .pipe(imagemin({
@@ -121,7 +131,7 @@ gulp.task('sprite', function() {
       }));
 
   spriteData.img.pipe(gulp.dest('./src/images/'));
-  spriteData.css.pipe(gulp.dest('./src/style/'));
+  spriteData.css.pipe(gulp.dest('./src/style/base/'));
 });
 
 gulp.task('clean', function (cb) {
@@ -139,6 +149,7 @@ gulp.task('pre-build', [
     'sprite',
     'image:build',
     'libs:build',
+    'csslibs:build'
 ]);
 
 gulp.task('watch', function(){

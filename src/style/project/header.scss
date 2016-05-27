@@ -1,1 +1,80 @@
+.top-menu {
+    background-color: #505357;
+    margin-bottom: 12px;
+}
+
+.glyphicon_custom {
+    font-size: 20px;
+    margin-right: 7px;
+    top: 3px;
+}
+
+.email {
+    font-size: em(11px);
+    line-height: 30px;
+}
+
+.email__adress,
+.email__adress:hover {
+    color: #a8a8a9;
+}
+
+.social,
+.lang-switcher {
+    float: right;
+}
+
+.social__list {
+    font-size: 0;
+    padding: 0;
+    @extend .ul_style
+}
+
+.social__item {
+    display: inline-block;
+    border-left: 1px solid #878889;
+    &:hover {
+        background-color: #36393c;
+    }
+    &:last-child {
+        border-right: 1px solid #878889;
+    }
+}
+
+.social__link {
+    display: block;
+    width: 40px;
+    font-size: $base-font-size;
+    line-height: 30px;
+    text-align: center;
+    color: #878889;
+    &:hover {
+        color: #878889;
+    }
+}
+
+// .top-menu  {
+//      &::after {
+//         @extend .after;
+//         height: 30px;
+//         border-bottom: 30px solid #fff;
+//         border-left: 21px solid transparent;
+//         height: 30px;
+//         width: 17%;
+//      }
+// }
+
+.lang-switcher__link {
+    display: block;
+    padding-left: 40px;
+    padding-right: 70px;
+    font-size: em(11px);
+    line-height: 30px;
+    text-transform: lowercase;
+    color: #a8a8a9;
+    &:hover {
+        color: #a8a8a9;
+        background-color: #36393c;
+    }
+}
 

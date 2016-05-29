@@ -2,8 +2,83 @@
     position: relative;
     top: 2px;
     background-image: url(../img/sprite.png);
-    background-position: 0px 0px;
+    background-position: -56px -259px;
     width: 22px;
     height: 13px;
     margin-right: 10px;
+}
+
+.icon-info {
+    top: 2px;
+    background-image: url(../img/sprite.png);
+    background-position: 0px -178px;
+    width: 81px;
+    height: 81px;
+}
+
+.icon-question {
+    position: relative;
+    top: 8px;
+    background-image: url(../img/sprite.png);
+    background-position: 0px -259px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.icon-location {
+    position: relative;
+    top: 8px;
+    background-image: url(../img/sprite.png);
+    background-position: -430px -204px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.icon-places {
+    position: relative;
+    top: 8px;
+    background-image: url(../img/sprite.png);
+    background-position: -400px -204px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.icon-comments {
+    background-image: url(../img/sprite.png);
+    background-position: -162px -178px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.icon-company_visit {
+    top: 2px;
+    background-image: url(../img/sprite.png);
+    background-position: -81px -178px;
+    width: 81px;
+    height: 81px;
+}
+
+.icon-article {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 161px;
+  height: 178px;
+}
+
+.icon-booklet {
+  background-image: url(../img/sprite.png);
+  background-position: -161px 0px;
+  width: 161px;
+  height: 178px;
+}
+
+.icon-program {
+  background-image: url(../img/sprite.png);
+  background-position: -322px 0px;
+  width: 161px;
+  height: 178px;
 }

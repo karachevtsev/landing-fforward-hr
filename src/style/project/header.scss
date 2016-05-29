@@ -131,6 +131,7 @@
     color: #45484a;
     font-size: $base-font-size;
     line-height: 26px;
+    white-space: nowrap
     &:hover {
         color: #45484a;
     }
@@ -148,4 +149,33 @@
 .fa-mobile_custom {
     margin-right: 5px;
     font-size: em(28px);
+}
+
+.navigation {
+    font-family: $font-medium;
+    font-size: em(13px);
+    float: right;
+    background-color: #fdc84e;
+}
+
+.navigation__list {
+    @extend .ul_style;
+}
+
+.navigation__item {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 48px;
+}
+
+.navigation__link {
+    text-transform: uppercase;
+    color: #a95307;
+    transition: all .5s ease;
+    &_current {
+        color: $color-secondary;
+    }
+    &:hover {
+        color: $color-secondary;
+    }
 }

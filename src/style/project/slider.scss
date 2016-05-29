@@ -1,0 +1,121 @@
+.slide {
+    text-align: left;
+    outline: 1px solid red;;
+    padding: 0 50px;
+}
+
+// .comment {
+//     margin-left: 30px;
+// }
+
+// .container {
+//     outline: 1px solid lime;
+// }
+
+
+.comment__text {
+    position: relative;
+    padding-top: 27px;
+    padding-left: 20px;
+
+    color: #353535;
+    line-height: 19px;
+
+    min-height: 150px;
+    background-color: #ffcf5f;
+
+    border-radius: 4px;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 37px;
+        bottom: -23px;
+        border: 7px solid transparent;
+        border-top: 27px solid #ffcf5f;
+        display: block;
+        width: 0;
+        height: 0;
+        transform: rotate(45deg);
+    }
+}
+
+.client {
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+.client__foto, .client__info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.client__info {
+    max-width: 260px;
+    padding-left: 12px;
+}
+
+.client__name, .client__company {
+    display: block;
+}
+
+.client__name {
+    font-family: $font-medium;
+    color: $color-secondary;
+    font-size: em(16px);
+    line-height: 30px;
+}
+
+.client__company {
+    color: #353535;
+    font-family: $font-italic;
+    font-size: em(12px);
+    line-height: 20px;
+}
+
+.slide-company {
+    padding: 0 70px;
+}
+
+.company, .company-picture-wrap {
+    display: inline-block;
+}
+
+.company {
+    max-width: 360px;
+    padding: 30px 20px;
+    margin-top: 25px;
+    border: 1px solid #c7c4c4;
+    border-radius: 5px;
+    box-shadow: 0 0 13px rgba(198, 189, 186, 0.17);
+}
+
+.company-picture-wrap {
+    &:before {
+        @extend .before;
+        background-color: #fbd6b4;
+        // opacity: .5;
+    }
+}
+
+.company-picture {
+    position: relative;
+    vertical-align: top;
+    margin-left: -5px;
+    border: 5px solid #c7c4c4;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.company__descr {
+    font-family: $font-italic;
+    color: #968c8c;
+    font-size: em(12px);
+    line-height: 28px;
+}
+
+.company__about {
+    margin-bottom: 50px;
+    font-size: $base-font-size;
+    color: #181616;
+    line-height: 20px;
+}

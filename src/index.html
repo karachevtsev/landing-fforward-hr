@@ -27,17 +27,21 @@
         <div class="top-menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-5">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="toggle-navigation hidden-md hidden-lg"><span></span></a>
                         <div class="email">
-                            <a class="email__adress" href="mailto:visits@fforward.biz"><span class="glyphicon glyphicon-envelope glyphicon_custom" aria-hidden="true"></span>visits@fforward.biz</a>
+                            <a class="email__adress hidden-xs hidden-sm" href="mailto:visits@fforward.biz"><i class="fa fa-envelope-o fa-lg fa-custom" aria-hidden="true"></i></span>visits@fforward.biz</a>
                         </div>
                     </div>
-                    <div class="col-md-8 col-sm-8 col-xs-7">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
                         <div class="lang-switcher">
-                            <a class="lang-switcher__link hidden-xs" href="#"><i class="icon icon-eng-flag"></i>English</a>
-                            <a class="lang-switcher__link hidden-sm hidden-md hidden-lg" href="#"><i class="icon icon-eng-flag"></i></a>
+                            <a class="lang-switcher__link hidden-xs hidden-sm" href="#"><i class="icon icon-eng-flag"></i>English</a>
+                            <a class="lang-switcher__link hidden-md hidden-lg" href="#"><i class="icon icon-eng-flag"></i></a>
                         </div>
-                        <div class="social">
+                        <div class="mobile-logo hidden-md hidden-lg">
+                            <a href="#" class="mobile-logo__link"><img class="mobile-logo__image" src="img/logo_small.png" alt="Fastforward Company"></a>
+                        </div>
+                        <div class="social hidden-xs hidden-sm">
                             <ul class="social__list">
                                 <li class="social__item">
                                     <a class="social__link" href="#"><i class="fa fa-twitter"></i></a>
@@ -54,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="action-menu">
+        <div class="action-menu hidden-xs hidden-sm">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-4 col-xs-5">
@@ -70,7 +74,7 @@
                         <div class="phones">
                             <ul class="phones__list">
                                 <li class="phones__item">
-                                    <a class="phone__order" href="#"><i class="fa fa-mobile fa-lg fa-mobile_custom" aria-hidden="true"></i>Заказать обратный звонок</a>
+                                    <a class="phone__order" href="#"><i class="fa fa-mobile fa-2x fa-custom" aria-hidden="true"></i>Заказать обратный звонок</a>
                                 </li>
                                 <li class="phones__item">
                                     <a class="phone__number" href="tel:+380442214110">+380 44 221 41 10</a>
@@ -84,21 +88,21 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-2">
-                    <nav class="navigation">
+        <nav class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-2">
                         <ul class="navigation__list">
-                            <li class="navigation__item"><a class="navigation__link navigation__link_current" href="#">Главная</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">О компании</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">Менеджмент-туры</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">Отзывы</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+                                <li class="navigation__item"><a class="navigation__link navigation__link_current navigation__link_home" href="#">Главная</a></li>
+                                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_company">О компании</a></li>
+                                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_tour">Менеджмент-туры</a></li>
+                                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_feedbacks">Отзывы</a></li>
+                                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_contacts">Контакты</a></li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <section class="intro">
@@ -116,7 +120,7 @@
         </div>
     </section>
 
-    <section class="section info">
+    <section class="info section">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -152,8 +156,14 @@
             <div class="section-topline">
                 <div class="container">
                     <div class="row">
+                        <div class="section-devider">
+                            <div class="icon-wrap">
+                                <i class="icon icon-comments"></i>
+                            </div>
+                        </div>
                         <div class="col-md-10 col-md-offset-1">
-                            <i class="icon icon-comments"></i>
+
+
                             <p class="section-topline__text">Эти люди уже побывали в HR-менеджмент туре и с удовольствием поделяться с вами впечатлениями и знаниями, которые они получили, пребывая там.</p>
                         </div>
                     </div>
@@ -209,7 +219,7 @@
             </div>
     </section>
 
-    <section class="section program">
+    <section class="program section">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -235,7 +245,7 @@
                                                 <a href="#" class="btn btn_download">Скачать брошюру тура</a>
                                             </div>
                                             <!-- <div class="company-picture-wrap"> -->
-                                                <img class="company-picture" src="img/google_picture.jpg" alt="Review">
+                                                <img class="company-picture hidden-xs hidden-sm" src="img/google_picture.jpg" alt="Review">
                                             <!-- </div> -->
                                         </div>
                                         <!-- <div class="col-md-6">
@@ -286,8 +296,12 @@
         <div class="section-topline">
             <div class="container">
                 <div class="row">
+                    <div class="section-devider">
+                        <div class="icon-wrap">
+                            <i class="icon icon-registration"></i>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-md-offset-3">
-                        <i class="icon icon-registration"></i>
                         <p class="registration__text">Если у вас остались вопросы о туре, а также для oнлайн регистрации, заполните данную форму, и мы с вами свяжемся.</p>
                     </div>
                 </div>
@@ -316,7 +330,7 @@
                         <button class="btn btn_form">Зарегистрироваться</button>
                     </form>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 hidden-xs hidden-sm">
                     <div class="manager">
                         <div class="manager__foto">
                             <img src="img/photo_manager.jpg" alt="Review">
@@ -336,8 +350,10 @@
         <div class="section-topline">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <i class="icon icon-deal"></i>
+                    <div class="section-devider">
+                        <div class="icon-wrap">
+                            <i class="icon icon-deal"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -412,18 +428,18 @@
                                 <div class="footer-item__title">
                                     Подпишитесь на новости
                                 </div>
+                                <form class="form form_footer" id="callback">
+                                    <label>
+                                        <input type="text" placeholder="Ваше имя" name="name" required>
+                                   </label>
+                                    <label>
+                                        <input type="text" placeholder="E-mail adress" name="email" required>
+                                    </label>
+                                    <button class="btn-footer">Зарегистрироваться</button>
+                                </form>
                             </div>
-                            <form class="form form_footer" id="callback">
-                                <label>
-                                    <input type="text" placeholder="Ваше имя" name="name" required>
-                               </label>
-                                <label>
-                                    <input type="text" placeholder="E-mail adress" name="email" required>
-                                </label>
-                                <button class="btn-footer">Зарегистрироваться</button>
-                            </form>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6">
                             <div class="footer-item footer-item_right-border">
                                 <div class="footer-item__title">
                                     Московский офис
@@ -432,7 +448,7 @@
                                 <span class="footer-item__adress"><i class="fa fa-map-marker fa-custom" aria-hidden="true"></i>Архангельский пер., дом. 7, строение 1, офис 5</span>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6">
                             <div class="footer-item">
                                 <div class="footer-item__title">
                                     Киевский офис
@@ -449,13 +465,13 @@
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-3">
                         <span class="copyright-year">© 2015 Fastforward</span>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-6">
                         <p class="copyright-text">Воспроизведение материалов в любом виде разрешается толькопосле согласования с правообладателем. FastForward™, Менеджмент-тур™ являются зарегистированными товарными знаками.</p>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-3">
                         <div class="social">
                             <ul class="social__list">
                                 <li class="social__item social__item_footer">

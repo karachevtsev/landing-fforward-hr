@@ -41,4 +41,28 @@ body {
 
 .fa-custom {
     margin-right: 10px;
+    top: 2px;
 }
+
+.section-devider {
+    position: relative;
+    height: 1px;
+    background-color: #dad9d7;;
+    // width: 100%;
+}
+
+.icon-wrap {
+    position: absolute;
+    margin: auto;
+        top: -35px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    background-color: #fff;
+    width: 100px;
+    margin: auto;
+}
+
+// .container {
+//     outline: 1px solid lime;
+// }

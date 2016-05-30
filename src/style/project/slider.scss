@@ -1,6 +1,6 @@
 .slide {
     text-align: left;
-    outline: 1px solid red;;
+    // outline: 1px solid red;;
     padding: 0 50px;
 }
 
@@ -17,7 +17,8 @@
     position: relative;
     padding-top: 27px;
     padding-left: 20px;
-
+    padding-right: 10px;
+    padding-bottom: 10px;
     color: #353535;
     line-height: 19px;
 
@@ -87,6 +88,7 @@
     border: 1px solid #c7c4c4;
     border-radius: 5px;
     box-shadow: 0 0 13px rgba(198, 189, 186, 0.17);
+    background-color: #FFF;
 }
 
 .company-picture-wrap {

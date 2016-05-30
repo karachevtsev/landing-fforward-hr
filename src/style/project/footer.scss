@@ -43,6 +43,10 @@
         color: #fff;
         text-decoration: underline;
     }
+    &:focus {
+        color:  #fff;
+        text-decoration: underline;
+    }
 }
 
 .footer-item__phone,
@@ -68,6 +72,7 @@
     color: #6d6d6d;
     font-size: em(12px);
     line-height: 22px;
+    text-align: left;
 }
 
 .social__item_footer {
@@ -88,6 +93,9 @@
     text-align: center;
     color: #878889;
     &:hover {
+        color: #36393c;
+    }
+    &:focus {
         color: #36393c;
     }
 }

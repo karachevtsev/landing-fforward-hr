@@ -1,3 +1,91 @@
+.form {
+    padding-left: 65px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    // border: none;
+
+    box-sizing: border-box;
+    outline: none;
+
+    border: 1px solid #9d9b9a;
+    border-radius: 5px;
+
+    text-indent: 10px;
+    padding: 4px 0;
+
+    font-family: $font-regular;
+    font-size: $base-font-size;
+    color: #272728;
+
+    &:focus {
+        box-shadow: 0 0 8px rgba(198, 189, 186, 0.43);
+    }
+}
+
+label {
+    text-align: left;
+    margin-bottom: 15px;
+    display: block;
+    font-family: $font-medium;
+    color: #272728;
+    line-height: 28px;
+}
+
+.form_footer {
+    padding-left: 0;
+    padding-bottom: 0;
+    text-align: left;
+    input {
+        background: transparent;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid #fff;
+        border-radius: 0;
+        width: 80%;
+        font-family: $font-regular;
+        font-size: em(12px);
+        color: #fff;
+        text-indent: 1px;
+        &:focus {
+            box-shadow: none;
+            color: #fff;
+        }
+    }
+    label {
+        margin-bottom: 0;
+        line-height: 0;
+    }
+}
+
+.form_footer input::-webkit-input-placeholder {
+    text-indent: 5px;
+    text-transform: lowercase;
+    font-family: $font-italic;
+    color: #fff;
+}
+
+.form_footer input:-moz-placeholder {
+    text-indent: 5px;
+    text-transform: lowercase;
+    font-family: $font-italic;
+    color: #fff;
+}
+
+.form_footer input:focus::-webkit-input-placeholder { color:transparent; }
+.form_footer input:focus:-moz-placeholder { color:transparent; }
+.form_footer input:focus::-moz-placeholder { color:transparent; }
+.form_footer input:focus:-ms-input-placeholder { color:transparent };
+
+
+// .form__label_footer
+
+
+
 // input[type='text'],
 // textarea,
 // select,
@@ -26,7 +114,7 @@
 // input::-webkit-input-placeholder{
 
 // }
-// input::-moz-placeholde{
+// input::-moz-placeholder{
 
 // }
 

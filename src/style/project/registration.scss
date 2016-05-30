@@ -1,0 +1,50 @@
+.registration {
+    // text-align: center;
+    padding-bottom: 70px;
+}
+
+.registration__text {
+    text-align: center;
+    font-family: $font-regular;
+    font-size: $base-font-size;
+    color: #272728;
+}
+
+.manager {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.manager__info {
+    padding-top: 10px;
+}
+
+.manager__slogan,
+.manager__name,
+.manager__position {
+    display: block;
+}
+
+.manager__slogan {
+    font-family: $font-regular;
+    font-size: em(12px);
+    line-height: 12px;
+    color: #4f4f4f;
+    margin-bottom: 5px;
+}
+
+.manager__name {
+    font-family: $font-bold;
+    font-size: $base-font-size;
+    line-height: 12px;
+    color: #ff862c;
+    margin-bottom: 5px;
+}
+
+.manager__position {
+    font-family: $font-medium;
+    color: #4f4f4f;
+    font-size: $base-font-size;
+    line-height: 12px;
+    margin-bottom: 5px;
+}

@@ -1,17 +1,48 @@
-.slide {
+.slider-comments {
     text-align: left;
     // outline: 1px solid red;;
-    padding: 0 50px;
+    // padding: 0 50px;
+    padding-bottom: 70px;
 }
 
-// .comment {
-//     margin-left: 30px;
-// }
+.slider-comments {
+    .owl-nav {
+        position: absolute;
+        top: 12%;
+        width: 100%;
+        > div {
+            @extend .icon-arrow_left;
+            position: absolute;
+            left: 50px;
+            top: 25px;
+            opacity: .7;
+            transition: all .25s ease;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .owl-next {
+            right: 50px;
+            left: auto;
+            @extend .icon-arrow_right;
+        }
+    }
+}
+
+.comment {
+    padding: 0 50px;
+}
 
 // .container {
 //     outline: 1px solid lime;
 // }
+.comment_first {
+    padding-right: 0;
+}
 
+.comment_second {
+    padding-left: 0;
+}
 
 .comment__text {
     position: relative;
@@ -21,10 +52,8 @@
     padding-bottom: 10px;
     color: #353535;
     line-height: 19px;
-
     min-height: 150px;
     background-color: #ffcf5f;
-
     border-radius: 4px;
     &:after {
         content: '';
@@ -73,12 +102,24 @@
     line-height: 20px;
 }
 
-.slide-company {
-    padding: 0 70px;
+.owl-carousel .owl-item img.company-logo {
+    display: inline-block;
+    width: 154px;
 }
+
+.owl-carousel .owl-item img.company-picture {
+    display: inline-block;
+    width: 446px;
+}
+
+
+// .slide-company {
+//     padding: 0 70px;
+// }
 
 .company, .company-picture-wrap {
     display: inline-block;
+    vertical-align: top;
 }
 
 .company {
@@ -91,13 +132,13 @@
     background-color: #FFF;
 }
 
-.company-picture-wrap {
-    &:before {
-        @extend .before;
-        background-color: #fbd6b4;
-        // opacity: .5;
-    }
-}
+// .company-picture-wrap {
+//     &:before {
+//         @extend .before;
+//         background-color: #fbd6b4;
+//         // opacity: .5;
+//     }
+// }
 
 .company-picture {
     position: relative;
@@ -120,4 +161,28 @@
     font-size: $base-font-size;
     color: #181616;
     line-height: 20px;
+}
+
+.slider-program {
+    .owl-nav {
+        position: absolute;
+        top: 12%;
+        width: 100%;
+        > div {
+            @extend .icon-arrow_left;
+            position: absolute;
+            right: 137px;
+            top: 283px;
+            opacity: .7;
+            transition: all .25s ease;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .owl-next {
+            right: 105px;
+            top: 283px;
+            @extend .icon-arrow_right;
+        }
+    }
 }

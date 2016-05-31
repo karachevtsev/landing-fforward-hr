@@ -5,6 +5,18 @@
     .navigation {
         display: block;
     }
+
+    .slider-comments {
+        .owl-nav {
+            > div {
+                left: 25px;
+            }
+            .owl-next {
+                right: 25px;
+            }
+        }
+    }
+
 }
 
 /* Medium Devices, Desktops */
@@ -121,6 +133,10 @@
         line-height: 20px;
     }
 
+    .comment {
+        padding: 0;
+    }
+
     .company {
         text-align: center;
         max-width: 100%;
@@ -128,6 +144,33 @@
 
     .comments {
         padding-bottom: 60px;
+    }
+
+    .slider-comments {
+        .owl-nav {
+            > div {
+                top: 115px;
+            }
+            .owl-next {
+                top: 115px;
+            }
+        }
+    }
+
+    .slider-program {
+        .owl-nav {
+            > div {
+                right: 65px;
+                top: 244px;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .owl-next {
+                right: 35px;
+                top: 244px;
+            }
+        }
     }
 
     .download {
@@ -274,6 +317,19 @@
         padding: 0 7px;
     }
 
+    .slider-program {
+        .owl-nav {
+            > div {
+                right: 65px;
+                top: 0;
+            }
+            .owl-next {
+                right: 35px;
+                top: 0;
+            }
+        }
+    }
+
 
 
 }
@@ -327,6 +383,20 @@
         background: linear-gradient(164deg, rgba(248,248,248,1) 0%, rgba(248,248,248,1) 50%, rgba(243,243,243,1) 51%, rgba(243,243,243,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f3f3f3', GradientType=1 );
     }
+
+    .slider-comments {
+        .owl-nav {
+            > div {
+                top: 145px;
+            }
+            .owl-next {
+                top: 145px;
+            }
+        }
+    }
+
+
+
 
 }
 

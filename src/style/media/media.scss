@@ -2,8 +2,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-    .navigation {
-        display: block;
+    .top-menu {
+        background: rgba(80,83,87,1);
     }
 
     .slider-comments {
@@ -40,15 +40,11 @@
         margin-bottom: -1px;
     }
 
-    // .action-menu  {
-    //     display: none;
-    // }
-
     .navigation {
         display: none;
         min-width: 295px;
         text-align: center;
-        background-color: #505357;
+        background: #505357;
         opacity: 0.95;
         position: relative;
         position: absolute;
@@ -93,7 +89,6 @@
         }
     }
 
-
     .download__item {
         &:before {
         display: none;
@@ -121,10 +116,6 @@
         text-align: center;
         margin-bottom: 20px;
     }
-
-    // .section {
-    //     padding-bottom: 30px;
-    // }
 
     .section-topline__text {
         padding-top: 60px;
@@ -329,8 +320,6 @@
             }
         }
     }
-
-
 
 }
 

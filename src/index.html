@@ -17,6 +17,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -25,6 +26,7 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <!-- Start Header -->
     <header class="header">
         <div class="top-menu">
             <div class="container">
@@ -76,7 +78,7 @@
                         <div class="phones">
                             <ul class="phones__list">
                                 <li class="phones__item">
-                                    <a class="phone__order" href="#"><i class="fa fa-mobile fa-2x fa-custom" aria-hidden="true"></i>Заказать обратный звонок</a>
+                                    <a class="phone__order" href="#callback-phone"><i class="fa fa-mobile fa-2x fa-custom" aria-hidden="true"></i>Заказать обратный звонок</a>
                                 </li>
                                 <li class="phones__item">
                                     <a class="phone__number" href="tel:+380442214110">+380 44 221 41 10</a>
@@ -106,7 +108,8 @@
             </div>
         </nav>
     </header>
-
+    <!-- End Header -->
+    <!-- Start Intro -->
     <section class="intro">
         <div class="container">
             <div class="row">
@@ -115,13 +118,14 @@
                         <h1 class="intro__title">HR менеджмент-тур</h1>
                         <p class="intro__text"><span class="intro__text_uprc">Google</span><br>
                             Вы посетите компанию Google — одну из самых инновациионых ИТ-корпораций в мире. Созданная в 1998 году, она владеет самой популярной в мире поисковой системой.</p>
-                        <a href="#callback" class="btn">Зарегистрироваться</a>
+                        <a href="#callback" class="btn btn-popup">Зарегистрироваться</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- End Intro -->
+    <!-- Start Info -->
     <section class="info section">
         <div class="container">
             <div class="row">
@@ -150,10 +154,11 @@
                     </div>
                 </div>
             </div>
-            <a href="#callback" class="btn">Зарегистрироваться</a>
+            <a href="#callback" class="btn btn-popup">Зарегистрироваться</a>
         </div>
     </section>
-
+    <!-- End Info -->
+    <!-- Start Comments -->
     <section class="comments">
             <div class="section-topline">
                 <div class="container">
@@ -171,7 +176,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="slider-comments">
                 <div class="slide-comments">
                     <div class="container">
@@ -246,15 +250,14 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="container">
                 <div class="row">
                     <a href="#callback" class="btn">Посмотреть все отзывы</a>
                 </div>
             </div>
     </section>
-
+    <!-- End Comments -->
+    <!-- Start Program -->
     <section class="program section">
         <div class="container">
             <div class="row">
@@ -264,11 +267,9 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="row">
                 <div class="slider-program">
-
                     <div class="slide-program">
                         <div class="container">
                             <div class="row">
@@ -286,7 +287,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="slide-program">
                         <div class="container">
                             <div class="row">
@@ -304,11 +304,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="row">
                 <div class="download">
@@ -340,7 +338,8 @@
             </div>
         </div>
     </section>
-
+    <!-- End Program -->
+    <!-- Start Registration -->
     <section class="registration">
         <div class="section-topline">
             <div class="container">
@@ -359,7 +358,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <form class="form" id="callback">
+                    <form class="form">
                         <label>
                             <span class="form__label">ФИО:</span>
                             <input type="text" name="name" required>
@@ -394,7 +393,8 @@
             </div>
         </div>
     </section>
-
+    <!-- End Registration -->
+    <!-- Start Partners -->
     <section class="partners">
         <div class="section-topline">
             <div class="container">
@@ -449,7 +449,8 @@
             </div>
         </div>
     </section>
-
+    <!-- End Partners -->
+    <!-- Start Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="container">
@@ -477,7 +478,7 @@
                                 <div class="footer-item__title">
                                     Подпишитесь на новости
                                 </div>
-                                <form class="form form_footer" id="callback">
+                                <form class="form form_footer">
                                     <label>
                                         <input type="text" placeholder="Ваше имя" name="name" required>
                                    </label>
@@ -539,6 +540,47 @@
             </div>
         </div>
     </footer>
+    <!-- End Footer -->
+    <!-- Start form-popup content-->
+    <div class="hidden">
+        <form class="form form-popup" id="callback">
+            <label>
+                <span class="form__label">ФИО:</span>
+                <input type="text" name="name" required>
+           </label>
+            <label>
+                <span class="form__label">Телефон:</span>
+                <input type="text" name="phone" required>
+            </label>
+            <label>
+                <span class="form__label">E-mail:</span>
+                <input type="text" name="email" required>
+            </label>
+            <label>
+                <span class="form__label">Ваша компания:</span>
+                <input type="text" name="company" required>
+            </label>
+            <button class="btn btn_form">Зарегистрироваться</button>
+            <input type="hidden" name="formname" value="">
+        </form>
+     </div>
+
+     <div class="hidden">
+        <form class="form form-popup" id="callback-phone">
+            <h4 class="form__title">Пожалуйста, укажите свою контактную информацию и мы Вам перезвоним.</h4>
+            <label>
+                <span class="form__label">ФИО:</span>
+                <input type="text" name="name" required>
+           </label>
+            <label>
+                <span class="form__label">Телефон:</span>
+                <input type="text" name="phone" required>
+            </label>
+            <button class="btn btn_form">Отправить</button>
+            <input type="hidden" name="formname" value="">
+        </form>
+     </div
+    <!-- End form-popup content-->
     <!-- Load Scripts Start -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

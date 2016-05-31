@@ -1,6 +1,5 @@
 $(document).ready(function() {
     var nav = $('.navigation');
-    // Responsive toggle navigation
     $('.toggle-navigation').click(function() {
         $(this).toggleClass('on');
         $('.navigation').slideToggle();
@@ -14,11 +13,11 @@ $(document).ready(function() {
     });
 
     $('.slider-comments').owlCarousel({
-        // loop: true,
+        loop: true,
         margin: 10,
         nav: true,
         navText : "",
-        // autoplay: true,
+        autoplay: true,
         fluidSpeed : 600,
         autoplayHoverPause : true,
         smartSpeed: 1000,
@@ -37,11 +36,11 @@ $(document).ready(function() {
     });
 
     $('.slider-program').owlCarousel({
-        // loop: true,
+        loop: true,
         margin: 10,
         nav: true,
         navText : "",
-        // autoplay: true,
+        autoplay: true,
         fluidSpeed : 600,
         autoplayHoverPause : true,
         smartSpeed: 1000,
@@ -57,6 +56,17 @@ $(document).ready(function() {
                 items:1
             }
         }
+    });
+
+    // Form popup with magnificPopup
+    $('.btn-popup').magnificPopup({
+        type:"inline",
+        mainClass: 'mfp-form'
+    });
+
+    $('.phone__order').magnificPopup({
+        type:"inline",
+        mainClass: 'mfp-form'
     });
 
 });

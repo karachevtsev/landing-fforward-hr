@@ -1,7 +1,5 @@
 .slider-comments {
     text-align: left;
-    // outline: 1px solid red;;
-    // padding: 0 50px;
     padding-bottom: 70px;
 }
 
@@ -33,9 +31,6 @@
     padding: 0 50px;
 }
 
-// .container {
-//     outline: 1px solid lime;
-// }
 .comment_first {
     padding-right: 0;
 }
@@ -112,11 +107,6 @@
     width: 446px;
 }
 
-
-// .slide-company {
-//     padding: 0 70px;
-// }
-
 .company, .company-picture-wrap {
     display: inline-block;
     vertical-align: top;
@@ -131,14 +121,6 @@
     box-shadow: 0 0 13px rgba(198, 189, 186, 0.17);
     background-color: #FFF;
 }
-
-// .company-picture-wrap {
-//     &:before {
-//         @extend .before;
-//         background-color: #fbd6b4;
-//         // opacity: .5;
-//     }
-// }
 
 .company-picture {
     position: relative;

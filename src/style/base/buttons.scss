@@ -10,16 +10,15 @@
     color: white;
     padding: 13px 42px;
     border-radius: 5px;
-
-
-
     background-color: $color-main;
     border: 2px solid #ebecf3;
-
     position: relative;
     z-index: 1;
     &:hover {
         background-color: $color-secondary;
+        color: #fff;
+    }
+    &:focus {
         color: #fff;
     }
 }
@@ -75,28 +74,3 @@
     }
 }
 
-
-
-//   // &:hover,
-//   // &--hover{
-
-//   // }
-
-//   // &:active,
-//   // &--active{
-
-//   // }
-
-//   // &--modify{
-
-//   //   &:hover,
-//   //   &--hover{
-
-//   //   }
-
-//   //   &:active,
-//   //   &--active{
-
-//   //   }
-//   // }
-// }

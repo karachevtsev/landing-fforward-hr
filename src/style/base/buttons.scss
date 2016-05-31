@@ -14,6 +14,7 @@
     border: 2px solid #ebecf3;
     position: relative;
     z-index: 1;
+    transition: all .5s ease;
     &:hover {
         background-color: $color-secondary;
         color: #fff;

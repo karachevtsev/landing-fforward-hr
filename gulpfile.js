@@ -101,6 +101,8 @@ gulp.task('style:build', function () {
 gulp.task('csslibs:build', function () {
     gulp.src('src/libs/*.css')
         .pipe(plumber())
+        .pipe(concat('libs.css'))
+        .pipe(cssmin())
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });

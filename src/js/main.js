@@ -69,4 +69,20 @@ $(document).ready(function() {
         mainClass: 'mfp-form'
     });
 
+    //AJAX sending forms
+    $('.form').submit(function() {
+        $.ajax({
+            type: 'POST',
+            url: '/mail.php',
+            data: $(this).serialize()
+        }).done(function() {
+            alert('Спасибо за заявку!');
+            setTimeout(function() {
+                $.magnificPopup.close();
+                $('.form').trigger('reset');
+            }, 1000);
+        });
+        return false;
+    });
+
 });

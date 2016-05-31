@@ -23,9 +23,11 @@
     border-top: 1px dashed #a2a2a2;
     position: absolute;
     width: 54%;
-    // background: #7F2020;
     top: 40%;
     left: 76%;
+    }
+    &:hover {
+        transform: translateY(-10px);
     }
 }
 

@@ -5,8 +5,9 @@
 }
 
 .footer-content-wrap {
+    position: relative;
     padding: 25px 0;
-    min-height: 160px;
+    min-height: 185px;
     background: transparent url('../img/footer_bg.png') no-repeat;
     background-position: center center;
     background-size: cover;
@@ -98,4 +99,14 @@
     &:focus {
         color: #36393c;
     }
+}
+
+.to-top {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 38px;
+    cursor: pointer;
+    @extend .icon-arrow_up;
 }
